@@ -33,6 +33,9 @@
     <ClCompile Include="ArrayPoints.cpp">
       <Filter>Quellcodedateien</Filter>
     </ClCompile>
+    <ClCompile Include="mwLinearFunction.cpp">
+      <Filter>Quellcodedateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="mwArcFunction.hpp">
@@ -54,6 +57,9 @@
       <Filter>Header-Dateien</Filter>
     </ClInclude>
     <ClInclude Include="ArrayPoints.h">
+      <Filter>Header-Dateien</Filter>
+    </ClInclude>
+    <ClInclude Include="mwLinearFunction.h">
       <Filter>Header-Dateien</Filter>
     </ClInclude>
   </ItemGroup>

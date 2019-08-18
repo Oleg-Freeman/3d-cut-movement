@@ -1,7 +1,5 @@
 #include "mwLinearFunction.h"
 
-#include <iostream>
-
 using namespace std;
 
 mwLinearFunction::mwLinearFunction(const double t1, const double t2, const char d)
@@ -26,8 +24,8 @@ mwLinearFunction::point3d mwLinearFunction::Evaluate(const double t) const
 		retValue.x(10.);
 		retValue.y(10.);
 		retValue.z(7. + t);
-	default :
-		throw misc::mwException(0, "Invalid sphere movement dirrection");
+	//default :
+		//throw misc::mwException(0, "Invalid sphere movement dirrection");
 	}
 
 	return retValue;

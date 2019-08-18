@@ -151,6 +151,7 @@
       <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">EnableFastChecks</BasicRuntimeChecks>
       <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MaxSpeed</Optimization>
     </ClCompile>
+    <ClCompile Include="mwLinearFunction.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ArrayPoints.h" />
@@ -159,6 +160,7 @@
     <ClInclude Include="mwDiscreteFunction.hpp" />
     <ClInclude Include="mwException.hpp" />
     <ClInclude Include="mwIdxRangeException.hpp" />
+    <ClInclude Include="mwLinearFunction.h" />
     <ClInclude Include="mwTPoint3d.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

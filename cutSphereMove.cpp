@@ -1,7 +1,7 @@
 #include <string>
 
 #include "mwTPoint3d.hpp"
-#include "mwArcFunction.hpp"
+#include "mwLinearFunction.h"
 #include "CreateSkin.hpp"
 
 //#############################################################################
@@ -34,7 +34,7 @@ int main(int argc, char* argv[])
 	const std::string skinFileName( "test.asc" );
 
 	//Function object to be evaluated
-	mwArcFunction func( 0., 1., 4. );
+	mwLinearFunction func( 0., 5., 'X' );
 
 	//Evaluation here
 	CreateSkin( referencePoint, nx, ny, nz, sphereRad, func, deltaT, delta, skinFileName );
