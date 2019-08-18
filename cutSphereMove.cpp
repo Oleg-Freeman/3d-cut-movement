@@ -13,13 +13,13 @@ int main(int argc, char* argv[])
 	cadcam::mwTPoint3d<double> referencePoint( 0., 0., 0. );
 
 	//Number of points in x direction
-	const unsigned long nx = 20;
+	const unsigned long nx = 1000;
 
 	//Number of points in y direction
-	const unsigned long ny = 20;
+	const unsigned long ny = 500;
 
 	//Number of points in z direction
-	const unsigned long nz = 10;
+	const unsigned long nz = 100;
 
 	//Distance between points in the point grid (same fo x, y and z directions)
 	const double delta = 1.;
@@ -34,7 +34,7 @@ int main(int argc, char* argv[])
 	const std::string skinFileName( "test.asc" );
 
 	//Function object to be evaluated
-	mwLinearFunction func( 0., 5., 'X' );
+	mwLinearFunction func( 0., 1.);
 
 	//Evaluation here
 	CreateSkin( referencePoint, nx, ny, nz, sphereRad, func, deltaT, delta, skinFileName );

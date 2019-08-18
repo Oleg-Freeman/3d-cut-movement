@@ -8,10 +8,8 @@ class mwLinearFunction :
 	public mwDiscreteFunction
 {
 public:
-	mwLinearFunction(const double, const double, const char);
+	mwLinearFunction(const double, const double);
 	point3d Evaluate(const double) const;
-private:
-	const char dirrection;
 };
 
 #endif

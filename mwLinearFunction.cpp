@@ -2,8 +2,8 @@
 
 using namespace std;
 
-mwLinearFunction::mwLinearFunction(const double t1, const double t2, const char d)
-	:mwDiscreteFunction(t1, t2), dirrection(d){}
+mwLinearFunction::mwLinearFunction(const double t1, const double t2)
+	:mwDiscreteFunction(t1, t2){}
 
 mwLinearFunction::point3d mwLinearFunction::Evaluate(const double t) const
 {
@@ -11,9 +11,9 @@ mwLinearFunction::point3d mwLinearFunction::Evaluate(const double t) const
 
 	point3d retValue;
 	//
-	retValue.x(10. + t);
-	retValue.y(10.);
-	retValue.z(7.);
+	retValue.x(500. + t);
+	retValue.y(250.);
+	retValue.z(100.);
 	
 	return retValue;
 }
