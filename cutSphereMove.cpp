@@ -1,7 +1,7 @@
 #include <string>
 
 #include "mwTPoint3d.hpp"
-#include "mwLinearFunction.h"
+#include "mwLinearFunction.h"//Changet from mwArcFunction
 #include "CreateSkin.hpp"
 
 //#############################################################################
@@ -34,6 +34,8 @@ int main(int argc, char* argv[])
 	const std::string skinFileName( "test.asc" );
 
 	//Function object to be evaluated
+	//New derrived class object with two parameters for
+	//begin and end of sphere center movement
 	mwLinearFunction func( 0., 1.);
 
 	//Evaluation here
