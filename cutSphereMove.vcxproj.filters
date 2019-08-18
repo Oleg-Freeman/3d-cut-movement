@@ -18,9 +18,6 @@
     <ClCompile Include="cutSphereMove.cpp">
       <Filter>Quellcodedateien</Filter>
     </ClCompile>
-    <ClCompile Include="mwArcFunction.cpp">
-      <Filter>Quellcodedateien</Filter>
-    </ClCompile>
     <ClCompile Include="mwException.cpp">
       <Filter>Quellcodedateien</Filter>
     </ClCompile>
@@ -38,9 +35,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="mwArcFunction.hpp">
-      <Filter>Header-Dateien</Filter>
-    </ClInclude>
     <ClInclude Include="mwDiscreteFunction.hpp">
       <Filter>Header-Dateien</Filter>
     </ClInclude>

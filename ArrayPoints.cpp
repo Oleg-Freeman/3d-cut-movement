@@ -30,11 +30,15 @@ ArrayPoints::ArrayPoints(const point3d p, const unsigned long x,
 //Function to print point coordinates X, Y, Z to specified file
 void ArrayPoints::printArray()
 {
+	int count{ 0 };
 	for (itr = Arr.begin(); itr < Arr.end(); ++itr)
 	{
 		//printing to file each coordinate in 0.0 format
 		fout << fixed << setprecision(1) << itr->x() << " " << itr->y() << " " << itr->z() << endl;
+		++count;
+
 	}
+	//fout << endl << "Number of points = " << count;
 }
 
 //Function to delete iterated point
@@ -64,6 +68,9 @@ void ArrayPoints::VCalculate(mwDiscreteFunction &f, const double r, const double
 			
 			//Call function to compare vector length with sphere radius and remove
 			//not needed point
+			//fout << "Coordinate X is " << f.Evaluate(((double)g / 100.0)).x() << endl;
+			//fout << "Coordinate Y is " << f.Evaluate(((double)g / 100.0)).y() << endl;
+			//fout << "Coordinate Z is " << f.Evaluate(((double)g / 100.0)).z() << endl;
 			delArrayElem(itr, VLength, r);
 		}
 	}
